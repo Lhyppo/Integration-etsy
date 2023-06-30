@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: 'PTSerif-Regular';
+    color: #222;
 }
 
 .text-center {
@@ -15,27 +16,28 @@
 
 .section-beige {
     background-color: #FDEBD2;
-    padding: 12px 0px 12px 0px;
-    font-size: 32px;
-    margin: 0;
+    padding: 18px 50px 36px 50px;
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    margin-bottom: 35px;
 }
 
 #recent {
     background-color: #FDEBD2;
     font-size: 16px;
-    padding: 12px 24px 12px 24px;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1400px;
 }
+
 
 #recent > p {
     margin-bottom: 12px;
 }
 
-#recent > img {
+#recent>a>img {
     border-radius: 7px;
     width: 58px;
     height: 58px;
@@ -83,12 +85,25 @@ h1 {
 .title-section {
     font-family: 'Roboto', sans-serif;
     display: inline-block;
+    padding-bottom: 18px;
 }
 
-.title-section h2 {
+.title-section>a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.title-section>a>h2 {
     line-height: 36px;
     font-weight: 700;
     font-size: 28px;
+}
+
+.title-section>a>h2>img {
+    margin-left: 6px;
+    vertical-align: middle;
+    width: 12px;
+    height: 24px;
 }
 
 .title-section>p {
@@ -159,18 +174,23 @@ h1 {
     width: 114px;
 }
 
-.flex li>img {
+.flex li>a>img {
     max-width: 100%;
     border-radius: 50%;
     margin: 0 auto;
 }
 
-.flex li>p {
+.flex li>a>p {
     max-width: 100%;
     text-align: center;
     font-weight: 580;
     font-size: 16px;
     line-height: 20px;
+    color: black;
+}
+
+.shopping-window>a {
+    text-decoration: none;
 }
 
 
@@ -217,13 +237,11 @@ h3 {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    color: #222;
 }
 
 .presentation>div>p>a  {
     text-decoration-style: dashed;
     text-underline-position: under;
-    color: #222;
 }
 
 #presentation-middle {
@@ -235,13 +253,11 @@ h3 {
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
-    color: #222;
     margin-bottom: 12px;
 }
 
 #question>a {
     text-decoration: none;
-    color: #222;
     font-size: 18px;
     line-height: 1.5;
     padding: 8px 12px;
@@ -262,13 +278,17 @@ h3 {
 
 #section-dark-blue{
     background-color: #2F466C;
+    text-align: left;
+}
+
+#section-dark-blue *{
+    color: #fff;
 }
 
 #links-footer{
     max-width: 1400px;
     display: flex;
     flex-wrap: wrap;
-    color: #fff;
     margin: 0 auto;
     padding: 0px 24px !important;
 }
@@ -296,8 +316,58 @@ h3 {
 .list-footer>a {
     text-decoration: none;
     text-align: left;
-    color: #fff !important;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
+}
+
+#networks-links {
+    margin-top: 12px;
+    padding-top: 36px;
+}
+
+#button-footer{
+    display: inline-flex;
+    margin-top: 24px;
+    padding: 6px 15px !important;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.4;
+    align-items: center;
+    border: #fff solid 2px;
+    border-radius: 24px;
+}
+
+.icon{
+    fill: currentColor;
+    display: block;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+#button-footer>p {
+    margin-left: 6px;
+    text-align: left;
+}
+
+#list-icons{
+    margin-top: 18px;
+    padding: 0px;
+    text-align: left;
+}
+
+.icon-networks {
+    width: 36px;
+    height: 36px;
+}
+
+.list-networks {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+#section-purple {
+    background-color: #232347;
 }
