@@ -32,7 +32,6 @@ h1 {
     max-width: 1400px;
 }
 
-
 #recent > p {
     margin-bottom: 12px;
 }
@@ -45,10 +44,10 @@ h1 {
 
 .grid{
     display: grid;
-    column-gap: 15px;
-    row-gap: 12px;
+    column-gap: 16px;
+    row-gap: 13px;
     margin: 0 auto 90px auto;
-    padding: 12px 50px 12px 50px;
+    padding: 12px 36px 12px 36px;
     max-width: 1400px;
 }
 
@@ -64,8 +63,8 @@ h1 {
     width: 100%;
     height: 100%;
     border-radius: 7px;
-    min-height: 118px;
-    min-width: 148px;
+    min-height: 105px;
+    min-width: 133px;
 }
 
 .price {
@@ -117,20 +116,20 @@ h1 {
 .grid2 {
     grid-template-columns: repeat(5, 1fr);
     display: grid;
-    column-gap: 15px;
-    row-gap: 12px;
+    column-gap: 16px;
+    row-gap: 13px;
 }
 
 #object1 {
     grid-row-start: 1;
-    grid-column-start: 1;
     grid-row-end: 3;
+    grid-column-start: 1;
     grid-column-end: 3;
 }
 
 #object1 img {
-    min-width: 311px;
-    min-height: 248px;
+    min-width: 280px;
+    min-height: 222px;
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -192,7 +191,6 @@ h1 {
 .shopping-window>a {
     text-decoration: none;
 }
-
 
 .link-beige-footer {
     font-size: 14px;
@@ -449,4 +447,64 @@ h3 {
 #section-beige-footer {
     padding: 36px 54px 72px 54px !important;
     margin: 0 auto !important;
+}
+
+@media (max-width: 910px) {
+    .grid {
+        padding: 12px 24px !important;
+    }
+    #grid1 {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 16px;
+        row-gap: 13px;
+    }
+    .grid2 {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 16px;
+        row-gap: 13px;
+    }
+    .items-none {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) and (min-width: 480px) {
+    .grid {
+        padding: 12px !important;
+    }
+    #grid1 {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 16px;
+        row-gap: 13px;
+    }
+    .grid2 {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 16px;
+        row-gap: 13px;
+    }
+    .items-none2, .items-none3 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        padding: 12px !important;
+    }
+    #grid1 {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        row-gap: 13px;
+    }
+    .grid2 {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 16px;
+        row-gap: 13px;
+    }
+    .items-none2 {
+        display: none;
+    }
+    .mini-items {
+        display: block !important;
+    }
 }
