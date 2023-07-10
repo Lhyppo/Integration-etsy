@@ -57,12 +57,18 @@ h1 {
 
 .products {
     position: relative;
+    transition: box-shadow .2s;
+    border-radius: 7px;
 }
 
 .products img {
     width: 100%;
     height: 100%;
     border-radius: 7px;
+}
+
+.products:hover {
+    box-shadow: 0 0 7px rgba(20, 20, 20, 0.2);
 }
 
 .price {
@@ -164,16 +170,23 @@ h1 {
 .flex li {
     display: flex;
     flex-direction: column;
-    padding: 0 36px;
+    padding: 0 30px;
     position: relative;
     max-width: 114px;
     width: 114px;
 }
 
 .flex li>a>img {
-    max-width: 100%;
+    max-width: 100% !important;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: 0 auto 9px auto;
+    padding: 1px;
+    transition: .2s ease-in-out;
+}
+
+.flex li>a:hover img {
+        transform: scale(1.07);
+        box-shadow: 0 0 10px rgba(15, 15, 15, 0.2);
 }
 
 .flex li>a>p {
@@ -182,7 +195,14 @@ h1 {
     font-weight: 580;
     font-size: 16px;
     line-height: 20px;
-    color: black;
+    color: #222;
+}
+
+.flex li>a:hover p {
+    color: #595959;
+    border-bottom: 2px solid #595959;
+    padding-bottom: 5px;
+    margin-bottom: -7px;
 }
 
 .shopping-window>a {
