@@ -108,6 +108,11 @@ h1 {
     vertical-align: middle;
     width: 12px;
     height: 24px;
+    transition: .1s;
+}
+
+.title-section>a:hover img {
+    translate: 4px 0px;
 }
 
 .title-section>p {
@@ -277,6 +282,12 @@ h3 {
     padding: 8px 12px;
     border: #222 solid 2px;
     border-radius: 24px;
+    transition: 0.1s;
+}
+
+#question>a:hover {
+    padding: 10px 14px;
+    box-shadow: 0 0 4px rgba(15, 15, 15, .2);
 }
 
 #section-blue {
@@ -333,7 +344,7 @@ h3 {
 
 .list-footer {
     list-style: none;
-    padding: 6px 0;
+    padding: 4px 0;
 }
 
 .list-footer>a {
@@ -344,6 +355,10 @@ h3 {
     line-height: 18px;
 }
 
+.list-footer>a:hover {
+    text-decoration: underline;
+}
+
 #networks-links {
     margin-top: 12px;
 }
@@ -351,13 +366,25 @@ h3 {
 .button-footer{
     display: inline-flex;
     margin-top: 24px;
-    padding: 6px 15px !important;
+    padding: 5px 15px !important;
     text-decoration: none;
     font-size: 13px;
     line-height: 1.4;
     align-items: center;
     border: #fff solid 2px;
     border-radius: 24px;
+}
+
+.button-footer>p {
+    margin-left: 6px;
+    text-align: left;
+}
+
+#networks-links>a:hover{
+    padding: 7px 17px !important;
+    margin-top: 22px;
+    margin-bottom: -2px;
+    translate: -2px 0px;
 }
 
 .icon{
@@ -369,11 +396,6 @@ h3 {
     min-height: 24px;
 }
 
-.button-footer>p {
-    margin-left: 6px;
-    text-align: left;
-}
-
 #list-icons{
     margin-top: 18px;
     padding: 0px;
@@ -381,13 +403,27 @@ h3 {
 }
 
 .icon-networks {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    margin-left: -12px;
+}
+
+.icon-networks>svg{
     width: 36px;
     height: 36px;
+    padding: 6px;
 }
 
 .list-networks {
     display: inline-block;
     margin-right: 12px;
+    padding: 0;
+}
+
+.icon-networks:hover {
+    transform: scaleX(1.015) scaleY(1.035);
+    background-color: rgba(255,255,255,.075);
 }
 
 #section-purple {
@@ -417,8 +453,14 @@ h3 {
     border-radius: 24px;
     border: none;
     margin: 0 -15px;
-    padding: 9px 15px;
+    padding: 5px 15px;
     position: relative;
+}
+
+#purple-button:hover {
+    background-color: rgba(255,255,255,.075);
+    padding: 5px 17px !important;
+    translate: -2px 0px;
 }
 
 #other-information>div>a>pre {
