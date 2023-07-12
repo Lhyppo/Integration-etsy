@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="button.js"></script>
 </head>
 <body>
     <div></div>
@@ -235,7 +236,36 @@
             <div id="links-footer">
                 <div>
                     <h3>Acheter</h3>
-                    <ul id="footer-links-shop">
+                        <button onclick="buyButton()" class="drop-button button-js">
+                            <span>Acheter</span>
+                            <span class="button-icon"></span>
+                        </button>
+                        <div id="buy-content" class="button-content">
+                            <ul>
+                                <li class="list-footer">
+                                    <a href="">Cartes cadeaux</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Liste de mariage Etsy</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Plan du site</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Blog d'Etsy</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Etsy Royaume-Uni</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Etsy Allemagne</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Etsy Canada</a>
+                                </li>
+                            </ul>
+                        </div>
+                    <ul>
                         <li class="list-footer">
                             <a href="">Cartes cadeaux</a>
                         </li>
@@ -261,6 +291,26 @@
                 </div>
                 <div>
                     <h3>Vendre</h3>
+                        <button onclick="sellButton()" class="drop-button button-js">
+                            <span>Vendre</span>
+                            <span class="button-icon"></span>
+                        </button>
+                        <div id="sell-content" class="button-content">
+                            <ul>
+                                <li class="list-footer">
+                                    <a href="">Vendre sur Etsy</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Teams</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Forums</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Affiliés et créateurs</a>
+                                </li>
+                            </ul>
+                        </div>
                     <ul>
                         <li class="list-footer">
                             <a href="">Vendre sur Etsy</a>
@@ -278,6 +328,35 @@
                 </div>
                 <div>
                     <h3>A propos</h3>
+                        <button onclick="informationsButton()" class="drop-button button-js">
+                            <span>A propos</span>
+                            <span class="button-icon"></span>
+                        </button>
+                        <div id="informations-content" class="button-content">
+                            <ul>
+                                <li class="list-footer">
+                                    <a href="">Etsy, Inc.</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Conditions générales de vente</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Investisseurs</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Carrières</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Presse</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Impact</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Mentions légales</a>
+                                </li>
+                            </ul>
+                        </div>
                     <ul>
                         <li class="list-footer">
                             <a href="">Etsy, Inc.</a>
@@ -304,6 +383,20 @@
                 </div>
                 <div>
                     <h3>Aide</h3>
+                        <button onclick="helpButton()" class="drop-button button-js">
+                            <span>Aide</span>
+                            <span class="button-icon"></span>
+                        </button>
+                        <div id="help-content" class="button-content">
+                            <ul>
+                                <li class="list-footer">
+                                    <a href="">Centre d'aide</a>
+                                </li>
+                                <li class="list-footer">
+                                    <a href="">Paramètres de confidentialité</a>
+                                </li>
+                            </ul>
+                        </div>
                     <ul>
                         <li class="list-footer">
                             <a href="">Centre d'aide</a>
