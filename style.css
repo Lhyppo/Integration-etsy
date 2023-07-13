@@ -292,18 +292,37 @@ h3 {
 
 #section-blue {
     background-color: #4D6BC6;
-    text-align: center;
     padding: 12px 0px !important;
+    text-align: center !important;
 }
 
-#section-blue>svg {
+#section-blue>div {
+    display: inline-block;
+}
+
+#blue-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+#blue-button>div {
+    flex: 1 1 auto;
+}
+
+#blue-button>div>svg {
     fill: #fff;
     vertical-align: middle;
     height: 36px;
     width: 36px;
 }
 
-#section-blue>a {
+#blue-button>p {
+    text-decoration: underline;
     text-decoration-style: dashed;
     text-underline-position: under;
     color: #fff;
@@ -747,6 +766,34 @@ h3 {
     #networks-links> ul {
         margin-right: -25px;
     }
+    #purple-left, #purple-right {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center !important;
+        display: inline-block;
+    }
+    #purple-left {
+        padding-bottom: 12px;
+    }
+    #purple-button:hover, #networks-links > a:hover {
+        translate: 0px;
+    }
+    #purple-right>ul {
+        margin-left: 0px;
+        width: 100%;
+    }
+    #purple-right>ul>li {
+        margin-right: 12px;
+    }
+    #blue-button {
+        display: inline-block;
+    }
+    #blue-button>div{
+        margin-bottom: 6px;
+    }
+    #blue-button>p {
+        margin: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -850,16 +897,45 @@ h3 {
     }
     .button-content>ul{
         margin-top: -12px;
+        padding: 0 6px;
     }
     .list-footer>a {
         font-size: 16px;
         line-height: 18px;
-        padding: 4px 0;
     }
     #networks-links,  #networks-links *{
         text-align: center;
     }
     #networks-links> ul {
         margin-right: -25px;
+    }
+    #purple-left, #purple-right {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center !important;
+        display: inline-block;
+    }
+    #purple-left {
+        padding-bottom: 12px;
+    }
+    #purple-right>span {
+        margin-bottom: 12px !important;
+        display: inline-block;
+    }
+    #purple-button:hover, #networks-links > a:hover {
+        translate: 0px;
+    }
+    #section-blue>a {
+        display: inline-block;
+        text-align: center;
+    }
+    #blue-button {
+        display: inline-block;
+    }
+    #blue-button>div{
+        margin-bottom: 6px;
+    }
+    #blue-button>p {
+        margin: 0 12px;
     }
 }
