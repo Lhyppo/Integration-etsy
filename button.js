@@ -26,3 +26,59 @@ window.onclick = function(event) {
         }
     }
 }
+
+function favDescr() {
+    var element = document.getElementById("favorite-description");
+    element.classList.add("show-description");
+}
+
+function hideFavDescr() {
+    var element = document.getElementById("favorite-description");
+    element.classList.remove("show-description");
+}
+
+function updDescr() {
+    var element = document.getElementById("update-description");
+    element.classList.add("show-button-description");
+}
+
+function hideUpdDescr() {
+    var element = document.getElementById("update-description");
+    element.classList.remove("show-button-description");
+}
+
+function accountDescr() {
+    var element = document.getElementById("account-description");
+    element.classList.add("show-button-description");
+}
+
+function hideAccountDescr() {
+    var element = document.getElementById("account-description");
+    element.classList.remove("show-button-description");
+}
+function basketDescr() {
+    var element = document.getElementById("basket-description");
+    element.classList.add("show-description");
+}
+
+function hideBasketDescr() {
+    var element = document.getElementById("basket-description");
+    element.classList.remove("show-description");
+}
+
+function hamburgerMenu() {
+    document.getElementById("hamburger-menu").classList.toggle("show-hamburger-menu");
+}
+
+window.onclick = function(event) {
+    if (event.target.matches('.menu-button')) {
+        var pop = document.getElementsByClassName("hamburger-menu");
+        var i;
+        for (i=0; i>pop.length; i++) {
+            var openDropdown = pop[i];
+            if (openDropdown.classList.contains('show-hamburger-menu')) {
+                openDropdown.classList.remove('show-hamburger-menu');
+            }
+        }
+    }
+}

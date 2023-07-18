@@ -196,7 +196,7 @@ header {
 }
 
 #separation {
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid rgba(34,34,34,.15);
 }
 
 #menu {
@@ -239,4 +239,119 @@ header {
     transition: border 0.05s;
     border-bottom: 2px solid #222;
     margin-bottom: -2px;
+}
+
+#menu-button{
+    display: none;
+}
+
+#menu-button>svg {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+#menu-button:hover{
+    transition: transform 200ms cubic-bezier(0.345, 0.115, 0.135, 1.42);
+    transform: scaleX(1.035) scaleY(1.035) perspective(1px);
+    background-color: rgba(34,34,34,.075);
+}
+
+#menu-button:hover svg{
+    transition: transform 200ms cubic-bezier(0.345, 0.115, 0.135, 1.42);
+    transform: scaleX(.965) scaleY(.965);
+}
+
+#list-header>li:hover span {
+    display: block;
+}
+
+.description {
+    transform: translate(-15%);
+    background: #222;
+    border-radius: 6px;
+    color: #fff;
+    padding: 12px;
+    white-space: nowrap;
+    transition: opacity 300ms cubic-bezier(0.175, 0.745, 0.425, 1.11),transform 300ms cubic-bezier(0.175, 0.745, 0.425, 1.11),visibility 300ms cubic-bezier(0.175, 0.745, 0.425, 1.11);
+    box-shadow: 0 4px 20px rgba(34,34,34,.15);
+    z-index: 60;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+}
+
+.show-description {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-15%, 47%);
+}
+
+.show-button-description {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-15%, 22%);
+}
+
+.arrow>svg {
+    fill: rgb(172, 172, 172);
+}
+
+#hamburger-menu {
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    z-index: 80;
+    background: rgba(34,34,34,.65);
+    transition-delay: 0s;
+    overscroll-behavior: contain;
+    visibility: hidden;
+}
+
+.show-hamburger-menu{
+    display: flex !important;
+    visibility: visible !important;
+}
+
+@media (max-width: 910px) {
+    header {
+        padding: 0 12px;
+        flex-wrap: wrap;
+    }
+    #title {
+        padding: 6px 6px 6px 0px;
+    }
+    #middle-header {
+        order: 2;
+        flex: auto;
+        padding-right: 0;
+    }
+    #menu-button {
+        margin-left: -12px;
+        padding: 12px;
+        color: #222;
+        border-radius: 24px;
+        display: inline-block;
+        position: relative;
+        min-height: 48px;
+        min-width: 48px;
+        text-align: center;
+        margin-bottom: 12px;
+        background: none;
+        border: none;
+    }
+    #separation {
+        border-bottom: 1px solid rgba(34,34,34,.15);
+    }
+    #menu {
+        display: none;
+    }
 }
