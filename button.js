@@ -67,18 +67,11 @@ function hideBasketDescr() {
 }
 
 function hamburgerMenu() {
-    document.getElementById("hamburger-menu").classList.toggle("show-hamburger-menu");
+    let element = document.getElementById("hamburger-menu");
+    element.classList.add("show-hamburger-menu");
 }
 
-window.onclick = function(event) {
-    if (event.target.matches('.menu-button')) {
-        var pop = document.getElementsByClassName("hamburger-menu");
-        var i;
-        for (i=0; i>pop.length; i++) {
-            var openDropdown = pop[i];
-            if (openDropdown.classList.contains('show-hamburger-menu')) {
-                openDropdown.classList.remove('show-hamburger-menu');
-            }
-        }
-    }
+function closeMenu() {
+    let element = document.getElementById("hamburger-menu");
+    element.classList.remove("show-hamburger-menu");
 }
